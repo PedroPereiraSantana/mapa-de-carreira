@@ -11,22 +11,28 @@
     <title>Sobre Mim | Pedro Santana</title>
   </head>
   <body>
+
+    <!-- barra de navegação -->
+
     <nav
-      class="bg-gray-700 text-white flex justify-center gap-20 p-7 text-[16px] shadow-lg shadow-cyan-500/50 fixed w-[100%] border-b-2 border-white"
+      class="bg-gray-700 text-white flex justify-center gap-8 sm:gap-10 p-7 text-[16px] shadow-lg shadow-cyan-500/50 fixed w-[100%] border-b-2 border-white"
     >
-      <a href="index.html" class="hover:text-cyan-400">Sobre Mim</a>
+      <a href="index.html" class="text-cyan-400">Sobre Mim</a>
       <a href="objetivos.html" class="hover:text-cyan-400"
         >Objetivos de Carreira</a
       >
       <a href="contato.html" class="hover:text-cyan-400">Contatos</a>
     </nav>
-    <article class="flex h-[100vh] bg-gray-700">
+
+    <!-- sessão de apresentação -->
+
+    <article class="flex bg-gray-700 min-h-[100vh] lg:flex-row flex-col-reverse justify-center ">
       <div
-        class="text-white font-bold w-[50%] p-20 gap-10 flex flex-col justify-center"
+        class=" flex flex-col justify-center lg:items-start items-center text-white font-bold lg:w-[50%] w-[100%] sm:w-[100%] lg:p-20 pt-10 sm:pt-10 pb-[120px] lg:gap-10 sm:gap-10 gap-4 sm:gap-4"
       >
-        <p class="text-3xl">Olá, me chamo</p>
-        <h2 class="text-8xl">Pedro Santana</h2>
-        <p class="text-3xl">
+        <p class="lg:text-3xl text-2xl ">Olá, me chamo</p>
+        <h2 class="lg:text-8xl text-5xl">Pedro Santana</h2>
+        <p class="lg:text-3xl text-xl ">
           e sou desenvolvedor <span class="text-cyan-400">Full Stack</span>
         </p>
         <button
@@ -37,9 +43,9 @@
         </button>
       </div>
 
-      <div class="w-[50%] flex justify-center items-center">
+      <div class="lg:w-[50%] w-[100%] flex justify-center items-center pt-[150px] pb-[10px]">
         <div
-          class="w-[60%] rounded-full bg-cyan-400 border-8 border-cyan-400 shadow-lg shadow-cyan-500"
+          class="lg:w-[60%] w-[60%] rounded-full bg-cyan-400 border-8 border-cyan-400 shadow-lg shadow-cyan-500"
         >
           <img
             class="rounded-full"
@@ -50,21 +56,23 @@
       </div>
     </article>
 
+    <!-- sessão de sobre mim -->
+
     <article>
-      <div class="h-[92vh] bg-gray-600 flex">
-        <div class="w-[50%] flex justify-center items-center">
+      <div class="min-h-[100vh] bg-gray-600 flex flex-col lg:flex-row lg: justify-center items-center gap-10 pt-[30px] pb-[30px]">
+        <div class="w-[100%] lg:w-[50%] flex justify-center items-center">
           <img
-            class="w-[60%] rounded-full border-8 border-cyan-400 shadow-lg shadow-cyan-500"
+            class="w-[70%] rounded-full border-8 border-cyan-400 shadow-lg shadow-cyan-500"
             src="assets/1746218365363.png"
             alt=""
           />
         </div>
-        <div class="w-[50%] flex justify-center flex-col text-white">
-          <h2 class="text-7xl font-bold">
+        <div class="lg:w-[50%] w-[100%] lg:items-start flex justify-center items-center flex-col text-white">
+          <h2 class="text-5xl font-bold">
             Sobre <span class="text-cyan-400">mim</span>
           </h2>
-          <h4 class="text-3xl font-bold">Desenvolvedor Full Stack</h4>
-          <p class="w-[70%] pt-8 text-lg">
+          <h4 class="text-2xl font-bold">Desenvolvedor Full Stack</h4>
+          <p class="w-[80%] pt-8 text-lg text-[22px]">
             Sou uma pessoa curiosa, comunicativa e movida por desafios. Tenho
             interesse em desenvolvimento de software e adoro aprender coisas
             novas, principalmente ligadas à tecnologia e inovação. Gosto de
@@ -77,12 +85,14 @@
       </div>
     </article>
 
-    <article class="bg-gray-700 h-[92vh] text-white">
+    <!-- sessão de tecnologias -->
 
-      <h2 class="pl-[120px] text-7xl pt-[80px] font-bold">Tecnologias</h2>
+    <article class="bg-gray-700 min-h-[97vh] text-white">
 
-      <div class=" flex justify-around pt-[100px]">
-        <div class="w-[20%]">
+      <h2 class="pl-[120px] text-5xl pt-[80px] font-bold flex justify-center pr-[120px] ">Tecnologias</h2>
+
+      <div class=" flex lg:justify-around lg:items-start lg:flex-row pt-[100px] flex-col items-center gap-20">
+        <div class="lg:w-[20%] w-[80%] ">
           <h2 class="text-3xl pb-10"> Front-End </h2>
           <ul class=" flex flex-col gap-5">
             <li>
@@ -120,7 +130,7 @@
         </div>
 
 
-        <div class="w-[20%]">
+        <div class="lg:w-[20%] w-[80%]">
           <h2 class="text-3xl pb-10"> Back-End </h2>
           <ul class=" flex flex-col gap-5">
             <li>
@@ -146,7 +156,7 @@
         </div>
 
 
-        <div class="w-[20%]">
+        <div class="lg:w-[20%] w-[80%] pb-[100px]">
           <h2 class="text-3xl pb-10"> Outras Tecnologias </h2>
           <ul class=" flex flex-col gap-5">
             <li>
