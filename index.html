@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="scroll-smooth lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="shortcut icon" href="assets/letra-p.png" type="image/x-icon">
 
-    <title>Sobre Mim | Pedro Santana</title>
+    <title>Mapa de Carreira</title>
   </head>
   <body>
 
@@ -17,16 +18,16 @@
     <nav
       class="bg-gray-700 text-white flex justify-center gap-8 sm:gap-10 p-7 text-[16px] shadow-lg shadow-cyan-500/50 fixed w-[100%] border-b-2 border-white"
     >
-      <a href="index.html" class="text-cyan-400 text-[14px] md:text-[16px]">Sobre Mim</a>
-      <a href="objetivos.html" class="hover:text-cyan-400 text-[14px] md:text-[16px]"
+      <a href="#inicio" class="lg:hover:text-cyan-400 text-[14px] md:text-[16px]">Sobre Mim</a>
+      <a href="#mapa_carreira" class="lg:hover:text-cyan-400 text-[14px] md:text-[16px]"
         >Mapa de Carreira</a
       >
-      <a href="contato.html" class="hover:text-cyan-400 text-[14px] md:text-[16px]">Contatos</a>
+      <a href="#contatos" class="lg:hover:text-cyan-400 text-[14px] md:text-[16px]">Contatos</a>
     </nav>
 
     <!-- sessão de apresentação -->
 
-    <article class="flex bg-gray-700 min-h-[100vh] lg:flex-row flex-col-reverse justify-center ">
+    <article id="inicio" class="flex bg-gray-700 min-h-[100vh] lg:flex-row flex-col-reverse justify-center ">
       <div
         class=" flex flex-col justify-center lg:items-start items-center text-white font-bold lg:w-[50%] w-[100%] sm:w-[100%] lg:p-20 pt-10 sm:pt-10 pb-[120px] lg:gap-10 sm:gap-10 gap-4 sm:gap-4"
       >
@@ -88,13 +89,167 @@
 
     <!-- sessão de tecnologias -->
 
-    <article class="bg-gray-700 min-h-[97vh] text-white">
+    <div id="mapa_carreira"></div>
 
-      <h2 class="pl-[120px] text-5xl pt-[80px] font-bold flex justify-center pr-[120px] ">Tecnologias</h2>
 
-      <div class=" flex lg:justify-around lg:items-start lg:flex-row pt-[100px] flex-col items-center gap-20">
-        <div class="lg:w-[20%] w-[80%] ">
-          <h2 class="text-3xl pb-10"> Front-End </h2>
+    <article class="lg:flex text-white pt-[60px] bg-gray-700">
+    <div
+      class="flex flex-col items-center bg-gray-600">
+      <div class="w-[100vw] lg:w-[70vw] pr-[50px] pt-[80px] lg:pl-[20%] flex flex-col min-h-[100vh] bg-gray-700 ">
+        <div class="flex justify-center pb-[30px]">
+          <h1 class="text-white text-3xl lg:text-5xl font-bold">Mapa de Carreira</h1>
+        </div>
+        <div>
+          <div class="flex min-h-[600px] justify-between pt-10">
+            <div class="flex justify-center w-[10%]">
+              <div class="h-full w-[2px] bg-cyan-400"></div>
+            </div>
+            <div class="w-[90%] pr-[10px] text-white">
+              <h2 class="text-2xl font-bold pb-[10px] text-cyan-400">Desenvolvedor Júnior</h2>
+              <p class="pb-[10px]">
+                Objetivo a curto prazo: 
+                Me tornar um desenvolvedor Júnior Full
+                Stack, aprofundar meu conhecimentos em React, conceitos de
+                Back-End com Java/SpringBoot no desenvolvimento de APIs REST e
+                desenvolvimento de Banco de Dados com MySQL.
+              </p>
+              <h2 class="text-[19px] font-bold pb-[10px] text-cyan-400">
+                Soft Skills exigidas para essa carreira:
+              </h2>
+              <ul class="list-disc pl-[20px] flex flex-col gap-2 pb-[20px]">
+                <li>Vontade de Aprender</li>
+                <li>Comunicação clara</li>
+                <li>Colaboração em equipe</li>
+                <li>Organização</li>
+              </ul>
+              <h2 class="text-[19px] font-bold text-cyan-400 pb-[20px]">
+                Roadmap de Aprendizado
+              </h2>
+              <ul class="flex flex-wrap gap-3">
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">React</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Requisições HTTP</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">APIs REST</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">CRUD com JPA</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">GIT</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Postman</li>
+              </ul>
+            </div>
+          </div>
+        <div class="flex min-h-[600px] justify-between pt-10">
+            <div class="flex justify-center w-[10%]">
+              <div class="h-full w-[2px] bg-cyan-400"></div>
+            </div>
+            <div class="w-[90%] pr-[10px] text-white">
+              <h2 class="text-2xl font-bold pb-[10px] text-cyan-400">Desenvolvedor Pleno</h2>
+              <p class="pb-[10px]">
+                Objetivo a médio prazo:
+                Consolidar minha atuação como Desenvolvedor Full Stack Pleno, com foco em aprimorar a escrita de código limpo, seguro e escalável, utilizando React no front-end e Java/Spring Boot no back-end. Quero também aprofundar meu domínio em testes automatizados, versionamento com Git e integração contínua, atuando de forma mais autônoma em projetos completos.
+              </p>
+              <h2 class="text-[19px] font-bold pb-[10px] text-cyan-400">
+                Soft Skills exigidas para essa carreira:
+              </h2>
+              <ul class="list-disc pl-[20px] flex flex-col gap-2 pb-[20px]">
+                <li>Autonomia</li>
+                <li>Proatividade</li>
+                <li>Pensamento Crítico</li>
+                <li>Empatia Técnica</li>
+              </ul>
+              <h2 class="text-[19px] font-bold text-cyan-400 pb-[20px]">
+                Roadmap de Aprendizado
+              </h2>
+              <ul class="flex flex-wrap gap-3">
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Context API</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">JWT</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">REST com SpringBoot</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Spring Security</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Jest JUnit</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Docker</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <div class="flex min-h-[600px] justify-between pt-10">
+            <div class="flex justify-center w-[10%]">
+              <div class="h-full w-[2px] bg-cyan-400"></div>
+            </div>
+            <div class="w-[90%] pr-[10px] text-white">
+              <h2 class="text-2xl font-bold pb-[10px] text-cyan-400">Desenvolvedor Sênior</h2>
+              <p class="pb-[10px]">
+                Objetivo a longo prazo:
+                Atuar como Desenvolvedor Full Stack Sênior, liderando tecnicamente iniciativas com foco em qualidade, performance e arquitetura escalável. Busco evoluir em boas práticas de segurança (JWT, OAuth2), otimização de aplicações React, e uso avançado de recursos do Spring Boot, além de apoiar o crescimento técnico do time por meio de code reviews e mentoria.
+              </p>
+              <h2 class="text-[19px] font-bold pb-[10px] text-cyan-400">
+                Soft Skills exigidas para essa carreira:
+              </h2>
+              <ul class="list-disc pl-[20px] flex flex-col gap-2 pb-[20px]">
+                <li>Liderança Técnica</li>
+                <li>Mentoria</li>
+                <li>Visão de Produto</li>
+                <li>Comunicação Estratégica</li>
+              </ul>
+              <h2 class="text-[19px] font-bold text-cyan-400 pb-[20px]">
+                Roadmap de Aprendizado
+              </h2>
+              <ul class="flex flex-wrap gap-3">
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Arquitetura Escalável</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Lazy Loading</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">OAuth2</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Kafika</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Automatizar CI/CD</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Code Review</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex min-h-[600px] justify-between pt-10 pb-10">
+            <div class="flex justify-center w-[10%]">
+              <div ></div>
+            </div>
+            <div class="w-[90%] pr-[10px] text-white">
+              <h2 class="text-2xl font-bold pb-[10px] text-cyan-400">Tech Lead</h2>
+              <p class="pb-[10px]">
+                Objetivo Futuro:
+                Assumir o papel de Tech Lead em times de desenvolvimento Full Stack, sendo responsável por decisões arquiteturais, alinhamento técnico com o negócio e a liderança de equipes multidisciplinares. Pretendo unir conhecimento prático em React, Spring Boot e DevOps à habilidade de mentorar desenvolvedores e garantir entregas de alto impacto com foco em qualidade, escalabilidade e valor ao cliente.
+              </p>
+              <h2 class="text-[19px] font-bold pb-[10px] text-cyan-400">
+                Soft Skills exigidas para essa carreira:
+              </h2>
+              <ul class="list-disc pl-[20px] flex flex-col gap-2 pb-[20px]">
+                <li>Liderança e visão técnica</li>
+                <li>Mentoria e desenvolvimento de equipe</li>
+                <li>Comunicação com Stakeholders</li>
+                <li>Gestão de prioridades e resolução de conflitos</li>
+              </ul>
+              <h2 class="text-[19px] font-bold text-cyan-400 pb-[20px]">
+                Roadmap de Aprendizado
+              </h2>
+              <ul class="flex flex-wrap gap-3">
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Monolito</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Microsserviços</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Design Patterns</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">SOLID</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Clean Aechitecture</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Domain-Driven Design</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">DevOps</li>
+                <li class="flex items-center justify-center p-2 rounded-full bg-cyan-400 text-black">Gestão Técnica</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="bg-gray-600 lg:bg-gray-700 flex flex-col items-center lg:w-[40vw] ">
+      <h2 class="text-5xl pt-[80px] font-bold ">Tecnologias</h2>
+
+      <div class=" flex items-center flex-col lg:items-start w-[80%] pt-[100px]gap-20">
+        <div class="w-[80%] pt-[50px]">
+          <h2 class="text-3xl pb-10 pt-4 font-bold"> Front-End </h2>
           <ul class=" flex flex-col gap-5">
             <li>
               HTML e CSS
@@ -104,7 +259,7 @@
               </div>
             </li>
             <li>
-              TailwindCSS
+              Tailwind
               <p class="pl-[90%]">80%</p>
               <div class="w-[100%] bg-white h-[10px] rounded-full">
                 <div class="w-[80%] bg-cyan-400 h-[10px] rounded-full"></div>
@@ -117,22 +272,22 @@
             </li>
             <li>
               React
-              <p class="pl-[90%]">60%</p>
+              <p class="pl-[90%]">70%</p>
               <div class="w-[100%] bg-white h-[10px] rounded-full">
-                <div class="w-[60%] bg-cyan-400 h-[10px] rounded-full"></div>
+                <div class="w-[70%] bg-cyan-400 h-[10px] rounded-full"></div>
             </li>
             <li>
               Next.js
-              <p class="pl-[90%]">50%</p>
+              <p class="pl-[90%]">60%</p>
               <div class="w-[100%] bg-white h-[10px] rounded-full">
-                <div class="w-[50%] bg-cyan-400 h-[10px] rounded-full"></div>
+                <div class="w-[60%] bg-cyan-400 h-[10px] rounded-full"></div>
             </li>
           </ul>
         </div>
 
 
-        <div class="lg:w-[20%] w-[80%]">
-          <h2 class="text-3xl pb-10"> Back-End </h2>
+        <div class="w-[80%]">
+          <h2 class="text-3xl pb-10 pt-10 font-bold"> Back-End </h2>
           <ul class=" flex flex-col gap-5">
             <li>
               Java
@@ -157,8 +312,8 @@
         </div>
 
 
-        <div class="lg:w-[20%] w-[80%] pb-[100px]">
-          <h2 class="text-3xl pb-10"> Outras Tecnologias </h2>
+        <div class="w-[80%] pb-[100px]">
+          <h2 class="text-3xl pb-10 pt-10 font-bold"> Outras Tecnologias </h2>
           <ul class=" flex flex-col gap-5">
             <li>
               Figma
@@ -188,9 +343,31 @@
           </ul>
         </div>
       </div>
-
-
+    </div>
     </article>
+
+    <!-- sessão de contatos -->
+
+    <div id="contatos"></div>
+
+    <section class="pt-[70px] flex justify-center bg-gray-700 lg:bg-gray-600 text-white min-h-[55vh] lg:min-h-[70vh]">
+      <div class="w-[90%] md:w-[60%] lg:w-[50%] lg:flex lg:flex-col lg:items-center lg:h-[500px] lg:pt-14 lg:border-2 lg:shadow-lg lg:shadow-cyan-500">
+        <div class="flex justify-center">
+          <h2 class="text-5xl font-bold pb-10 text-cyan-400">Contatos</h2>
+        </div>
+        <div >
+          <p class="pb-10">Fique à vontade para me chamar nos canais abaixo:</p>
+        </div>
+        <ul class="flex flex-col gap-2">
+          <li class="flex items-center gap-2 hover:text-cyan-400"><i class="fa-solid fa-envelope text-2xl"></i> <a class="underline" href="mailto:pedro.santana9905@gmail.com">pedro.santana9905@gmail.com</a></li>
+          <li class="flex items-center gap-2 hover:text-cyan-400"><i class="fab fa-linkedin text-2xl"></i> <a class="underline" href="https://www.linkedin.com/in/pedro-santan4/" target="_blank">https://www.linkedin.com/in/pedro-santan4/</a></li>
+          <li class="flex items-center gap-2 hover:text-cyan-400"><i class="fa-brands fa-github text-2xl"></i> <a class="underline" href="https://github.com/PedroPereiraSantana" target="_blank">https://github.com/PedroPereiraSantana</a></li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-2xl"></i> São Paulo, SP</li>
+        </ul>
+      </div>
+    </section>
+
+
 
 
     <script src="scripts/script.js"></script>
